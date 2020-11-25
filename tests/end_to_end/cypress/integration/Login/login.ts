@@ -1,4 +1,6 @@
+/*
 import { Given, When, And, Then } from 'cypress-cucumber-preprocessor/steps';
+
 
 Given('I am on the login page', () => {
   cy.visit('http://localhost:3400');
@@ -17,6 +19,13 @@ And('I press "Connect"', () => {
   cy.get('form').submit();
 });
 
+
 Then('I should see the Header', () => {
   cy.get('header[class^="header"]').should('be.visible');
 });
+
+
+Given('a valid centreon user account', () => {
+  cy.visit('http://localhost:3400');
+});
+*/

@@ -1,5 +1,7 @@
 import './commands';
 
+before(() => cy.dockerStart().then(() => cy.loginForm()));
+
 beforeEach(() => {
-  cy.dockerStart();
+  Cypress.Cookies.preserveOnce('PHPSESSID');
 });
